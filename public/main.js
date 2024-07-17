@@ -3,5 +3,5 @@ function gotoLink(Link){
 };
 
 function disclaimer(){
-    alert("This Page Is Under Construction");
+    alert("Coming Soon");
 };
