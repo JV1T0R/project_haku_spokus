@@ -1,6 +1,3 @@
-/* Bootstrap Icons */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
-
 /* Google Fonts (Permanent Marker) */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 
@@ -11,14 +8,13 @@
 }
 
 body{
-    background-image: linear-gradient(to right bottom, #27b8bd, #27afe0, #819de7, #c485ca, #e47492);
+    background-image: linear-gradient(to right bottom, #27b8bd, #00b6cc, #09b2d9, #33ade3, #56a7e8, #73a1e9, #8e99e5, #a691dd, #be88cf, #d07fbe, #dd78a9, #e47492);
 
     header{
         font-family: "Permanent Marker", cursive;
 
         img{
-            width: 15em;
-            border-radius: 200px;
+            width: 15em;    
         }
     }
 }
