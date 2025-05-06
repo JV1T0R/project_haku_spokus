@@ -1,17 +1,35 @@
+// Desktop (1025px pra cima)
+@mixin desktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+// Tablet (768px - 1024px)
 @mixin tablet {
     @media (min-width: 768px) and (max-width: 1024px) {
         @content;
     }
 }
 
+// Celulares médios (481px - 767px)
 @mixin mobile-md {
-    @media (min-width: 375px) and (max-width: 767px) {
+    @media (max-width: 767px) {
+        // Removi o min-width para cobrir tudo abaixo de 768px
         @content;
     }
 }
 
+// Celulares pequenos (até 480px)
 @mixin mobile-sm {
-    @media (max-width: 374px) {
+    @media (max-width: 480px) {
+        @content;
+    }
+}
+
+// Dispositivos muito pequenos (opcional, raramente usado)
+@mixin mobile-xs {
+    @media (max-width: 320px) {
         @content;
     }
 }

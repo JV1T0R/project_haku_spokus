@@ -15,37 +15,44 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100">
-    <div class="flex-grow-1 d-flex align-items-center justify-content-center py-5 py-md-0">
-        <div class="text-center">
-            <header>
-                <img src="Assets/avatar.jpg" class="img-fluid rounded-circle" alt="profile_picture">
-                <h1 class="my-3">✦ haku_spokus ✦</h1>
-            </header>
+    <main class="flex-grow-1 d-flex align-items-center justify-content-center py-5 py-md-0">
+        <article class="rounded-4 p-4 blur-background custom-shadow">
+            <div class="text-center">
+                <header>
+                    <img src="Assets/avatar.jpg" class="img-fluid rounded-circle" alt="profile_picture">
+                    <h1 class="my-3">✦ haku_spokus ✦</h1>
+                </header>
 
-            <div class="btns d-flex flex-column gap-3">
-                <button type="button" class="btn btn-light p-2 fs-5"  onclick="gotoLink(this)" value="https://www.instagram.com/haku_spokus/"> 
-                    <i class="bi bi-instagram"></i>
-                    Instagram
-                </button>
-                <button type="button" class="btn btn-light p-2 fs-5"  onclick="gotoLink(this)" value="https://x.com/Haku_Spokus"> 
-                    <i class="bi bi-twitter-x"></i>
-                    Twitter X
-                </button>
-                <button type="button" class="btn btn-light p-2 fs-5"  onclick="gotoLink(this)" value="https://www.facebook.com/HakuSpokus13"> 
-                    <i class="bi bi-facebook"></i>
-                    Facebook
-                </button>
-                <button type="button" class="btn btn-light p-2 fs-5"  onclick="gotoLink(this)" value="https://hakuspokus.tumblr.com"> 
-                    <i class="bi bi-person-heart"></i>
-                    Tumblr
-                </button>
-                <button type="button" class="btn btn-light p-2 fs-5" onclick="gotoLink(this)" value="https://www.youtube.com/@hakuspokus">
-                    <i class="bi bi-youtube"></i>
-                    Youtube
-                </button>
+                <div class="btns d-flex flex-column gap-3">
+                    <button type="button" class="btn btn-light btn-custom p-2 fs-5 link-btn" 
+                    data-url="https://www.instagram.com/haku_spokus/"> 
+                        <i class="bi bi-instagram"></i>
+                        Instagram
+                    </button>
+                    <button type="button" class="btn btn-light btn-custom p-2 fs-5 link-btn" 
+                    data-url="https://x.com/Haku_Spokus"> 
+                        <i class="bi bi-twitter-x"></i>
+                        Twitter X
+                    </button>
+                    <button type="button" class="btn btn-light btn-custom p-2 fs-5 link-btn" 
+                    data-url="https://www.facebook.com/HakuSpokus13"> 
+                        <i class="bi bi-facebook"></i>
+                        Facebook
+                    </button>
+                    <button type="button" class="btn btn-light btn-custom p-2 fs-5 link-btn" 
+                    data-url="https://hakuspokus.tumblr.com"> 
+                        <i class="bi bi-person-heart"></i>
+                        Tumblr
+                    </button>
+                    <button type="button" class="btn btn-light btn-custom p-2 fs-5 link-btn" 
+                    data-url="https://www.youtube.com/@hakuspokus">
+                        <i class="bi bi-youtube"></i>
+                        Youtube
+                    </button>
+                </div>
             </div>
-        </div>
-    </div>
+        </article>
+    </main>
 
     <!-- JavaScript -->
     <script src="main.js"></script>

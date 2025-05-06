@@ -17,18 +17,6 @@ body{
     background-image: linear-gradient(to right bottom, #27b8bd, #00b6cc, #09b2d9, #33ade3, #56a7e8, #73a1e9, #8e99e5, #a691dd, #be88cf, #d07fbe, #dd78a9, #e47492);
     background-size: 200% 200%; 
     animation: gradientAnimation 10s ease infinite; 
-    
-    @keyframes gradientAnimation {
-        0% {
-            background-position: 0% 50%; 
-        }
-        50% {
-            background-position: 100% 50%; 
-        }
-        100% {
-            background-position: 0% 50%; 
-        }
-    }
 
     header{
         font-family: "Permanent Marker", cursive;
@@ -37,15 +25,65 @@ body{
             width: 250px;
             height: 250px;
 
-            @include mixins.mobile-md{
-                width: 200px;
-                height: 200px;
+            @include mixins.desktop {
+                width: 15rem;
             }
 
-            @include mixins.mobile-sm{
-                width: 190px;
-                height: 190px;
+            @include mixins.tablet {
+                width: 14rem;
+            }
+
+            @include mixins.mobile-md {
+                width: 13rem;   
+            }
+
+            @include mixins.mobile-sm {
+                width: 12rem;
+            }
+
+            @include mixins.mobile-xs {
+                width: 11rem;
             }  
         }
+    }
+}
+
+/* Custom Classes */
+.blur-background {
+    background: #FFFFFF1A;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.custom-shadow {
+    box-shadow: 0 0 5px 1.6px #0000001A;
+}
+
+.btn-custom {
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    padding: 0.5rem 1rem; 
+    padding-left: 3rem; 
+
+    i {
+        position: absolute;
+        left: 1rem; 
+        top: 50%; 
+        transform: translateY(-50%);
+    }
+}
+
+/* Animations */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%; 
+    }
+    50% {
+        background-position: 100% 50%; 
+    }
+    100% {
+        background-position: 0% 50%; 
     }
 }

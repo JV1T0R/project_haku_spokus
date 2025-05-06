@@ -14,6 +14,66 @@ body {
   background-size: 200% 200%;
   animation: gradientAnimation 10s ease infinite;
 }
+body header {
+  font-family: "Permanent Marker", cursive;
+}
+body header img {
+  width: 250px;
+  height: 250px;
+}
+@media (min-width: 1025px) {
+  body header img {
+    width: 15rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  body header img {
+    width: 14rem;
+  }
+}
+@media (max-width: 767px) {
+  body header img {
+    width: 13rem;
+  }
+}
+@media (max-width: 480px) {
+  body header img {
+    width: 12rem;
+  }
+}
+@media (max-width: 320px) {
+  body header img {
+    width: 11rem;
+  }
+}
+
+/* Custom Classes */
+.blur-background {
+  background: rgba(255, 255, 255, 0.1019607843);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.custom-shadow {
+  box-shadow: 0 0 5px 1.6px rgba(0, 0, 0, 0.1019607843);
+}
+
+.btn-custom {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  padding-left: 3rem;
+}
+.btn-custom i {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Animations */
 @keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
@@ -23,24 +83,5 @@ body {
   }
   100% {
     background-position: 0% 50%;
-  }
-}
-body header {
-  font-family: "Permanent Marker", cursive;
-}
-body header img {
-  width: 250px;
-  height: 250px;
-}
-@media (min-width: 375px) and (max-width: 767px) {
-  body header img {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media (max-width: 374px) {
-  body header img {
-    width: 190px;
-    height: 190px;
   }
 }/*# sourceMappingURL=style.css.map */
